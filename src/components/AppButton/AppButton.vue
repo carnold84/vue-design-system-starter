@@ -17,9 +17,6 @@ export default {
   components: {
     wrapper: Wrapper,
   },
-  created () {
-    console.log(this.theme);
-  },
   methods: {
     onClick () {
       this.$emit('click');
@@ -36,7 +33,6 @@ export default {
     },
     theme: {
       default: function () {
-        console.log('theme');
         return {
           button: {
             bgColor: '#ffffff',
