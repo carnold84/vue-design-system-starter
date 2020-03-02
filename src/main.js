@@ -1,3 +1,11 @@
 import AppButton from './components/AppButton/AppButton';
+import defaultTheme from './themes/default';
 
-export { AppButton };
+const themes = {
+  default: defaultTheme,
+};
+
+export {
+  AppButton,
+  themes,
+};

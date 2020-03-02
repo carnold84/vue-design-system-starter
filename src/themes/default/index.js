@@ -26,7 +26,7 @@ export default {
     color: colors.text3,
     _focus: {
       bgColor: colors.theme1,
-      borderColor: colors.primary1,
+      borderColor: colors.theme2,
       color: colors.text1,
       outlineColor: colors.theme5,
     },
@@ -39,6 +39,12 @@ export default {
       bgColor: colors.primary1,
       borderColor: colors.primary1,
       color: colors.textAlt1,
+      _focus: {
+        bgColor: colors.primary1,
+        borderColor: colors.primary1,
+        color: colors.textAlt1,
+        outlineColor: colors.primary2,
+      },
       _hover: {
         bgColor: colors.primary2,
         borderColor: colors.primary1,

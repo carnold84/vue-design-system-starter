@@ -42,5 +42,12 @@ export const Wrapper = styled.button`
       border-color: ${props => props.theme.button._primary._hover.borderColor};
       color: ${props => props.theme.button._primary._hover.color};
     }
+
+    &:focus {
+      background-color: ${props => props.theme.button._primary._focus.bgColor};
+      border-color: ${props => props.theme.button._primary._focus.borderColor};
+      color: ${props => props.theme.button._primary._focus.color};
+      box-shadow: 0 0 0 2px ${props => props.theme.button._primary._focus.outlineColor};
+    }
   }
 `;

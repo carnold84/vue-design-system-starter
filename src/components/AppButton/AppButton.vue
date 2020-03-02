@@ -15,12 +15,10 @@ import { Wrapper } from './AppButton.styles';
 export default {
   name: 'app-button',
   components: {
-    Wrapper,
+    wrapper: Wrapper,
   },
-  computed: {
-    primaryClass: function () {
-      return this.isPrimary ? 'is-primary' : null;
-    },
+  created () {
+    console.log(this.theme);
   },
   methods: {
     onClick () {
@@ -35,6 +33,40 @@ export default {
     isPrimary: {
       default: false,
       type: Boolean,
+    },
+    theme: {
+      default: function () {
+        console.log('theme');
+        return {
+          button: {
+            bgColor: '#ffffff',
+            borderColor: '#dddddd',
+            color: '#777777',
+            _focus: {
+              bgColor: '#ffffff',
+              borderColor: '#7f226b',
+              color: '#222222',
+              outlineColor: '#cccccc',
+            },
+            _hover: {
+              bgColor: '#f9f9f9',
+              borderColor: '#cccccc',
+              color: '#222222',
+            },
+            _primary: {
+              bgColor: '#7f226b',
+              borderColor: '#7f226b',
+              color: '#ffffff',
+              _hover: {
+                bgColor: '#a73a8f',
+                borderColor: '#7f226b',
+                color: '#ffffff',
+              },
+            },
+          },
+        };
+      },
+      type: Object,
     },
     type: {
       default: 'button',
