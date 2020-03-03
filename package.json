@@ -2,23 +2,26 @@
   "name": "vue-design-system-starter",
   "version": "0.1.0",
   "private": true,
-  "main": "./dist/my-vue-library.common.js",
+  "main": "./dist/my-design-system.common.js",
+  "repository": "https://github.com/carnold84/vue-design-system-starter",
   "files": [
     "dist/*",
     "src/*"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name my-vue-library src/main.js",
+    "build": "vue-cli-service build --target lib --name my-design-system src/main.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "peerDependencies": {
+    "vue-styled-components": "^1.4.14"
+  },
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11",
-    "vue-styled-components": "^1.4.14"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",

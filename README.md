@@ -1,13 +1,13 @@
-# vue-library-starter
+# Vue Design System Starter
 
 ## Project setup
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Starts Storybook for development
 ```
-yarn serve
+yarn storybook
 ```
 
 ### Compiles and minifies for production
