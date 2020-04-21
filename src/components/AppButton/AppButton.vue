@@ -18,7 +18,7 @@ export default {
     wrapper: Wrapper,
   },
   methods: {
-    onClick () {
+    onClick() {
       this.$emit('click');
     },
   },
@@ -32,7 +32,7 @@ export default {
       type: Boolean,
     },
     theme: {
-      default: function () {
+      default: function() {
         return {
           button: {
             bgColor: '#ffffff',
